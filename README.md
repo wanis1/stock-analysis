@@ -31,7 +31,7 @@ In this analysis we determined the total daily volume and the yearly return for 
 
 > ![image](https://user-images.githubusercontent.com/86074187/124404559-6ee6dd80-dd09-11eb-8d02-7dfd16c5e7d9.png)
 
-6. Next step is to increase the tickerIndex by 1. For that we used the if condition to check if the ticker value for the current row is the same as ticker value for the previous row by using the same tickerIndex and also check if ticker value for the next row is equal to the ticker value of the current row or not. If not, it would increase the ticker index by 1 and if it is the same, it will iterate over the next row adding in the total daily volume and searching for the ticker ending price.
+6. Next step is to increase the tickerIndex by 1. For that we used the if condition to check if the ticker value for the current row is the same as ticker value for the previous row by using the same tickerIndex and also check if ticker value for the next row is equal to the ticker value of the current row or not. If not, it would increase the ticker index by 1 and if it is the same, it will iterate over the next row adding in the total daily volume until it has reached the next ticker, and then would store the total daily volume for that ticker in the array tickeVolumes(i).
 
 > ![image](https://user-images.githubusercontent.com/86074187/124404574-7e662680-dd09-11eb-9695-67e9736c0205.png)
 
@@ -46,16 +46,26 @@ In this analysis we determined the total daily volume and the yearly return for 
 ### OUTPUT
 **Analysis**
 
-<img width="411" alt="Output analysis Refactored" src="https://user-images.githubusercontent.com/86074187/124404998-47911000-dd0b-11eb-9a98-42d26c607ae1.png">
+> <img width="411" alt="Output analysis Refactored" src="https://user-images.githubusercontent.com/86074187/124404998-47911000-dd0b-11eb-9a98-42d26c607ae1.png">
 
 **Code Performance for Refactored Code**
 
-<img width="347" alt="Code performance refactored" src="https://user-images.githubusercontent.com/86074187/124405106-ab1b3d80-dd0b-11eb-9c40-0804f3356798.png">
+> <img width="347" alt="Code performance refactored" src="https://user-images.githubusercontent.com/86074187/124405106-ab1b3d80-dd0b-11eb-9c40-0804f3356798.png">
 
 **Code Performance for Initial Code**
 
-<img width="320" alt="Code Performance original" src="https://user-images.githubusercontent.com/86074187/124405367-6d6ae480-dd0c-11eb-9799-3caa5bf952aa.png">
+> <img width="320" alt="Code Performance original" src="https://user-images.githubusercontent.com/86074187/124405367-6d6ae480-dd0c-11eb-9799-3caa5bf952aa.png">
 
 ## SUMMARY
+### Advantages and Disadvantages of Refactoring a Code:
+- The biggest advantage is that refactoring the code improves the run time of the code, hence enhancing the code performance.
+- Refactoring can also clean up the code by removing the lines that are unnecessary and duplicated and are make the code unnecessarily long.
+- Refactoring also includes adding comments to the code and maintaining consistensy of indentation which makes it easier to read the code, if you wanna revisit at a later time or show someone else to read.
+- It is more complex than the original code, and was therefore harder to debug and read through it.
+- It would be easier to understand this code if it was broken down further into For loops.
+
+### Pros and Cons in relation with Refactoring:
+With refactoring a code, not only does it become more efficient in terms of run time, but also it has less of unnecessary/duplicated lines. Refactored code is neater because the indentations are consistent, easier to read because of the added comments and consumes less memory. 
+
 
 
